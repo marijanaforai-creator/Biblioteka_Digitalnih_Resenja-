@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Marijana AI | Biblioteka Digitalnih Rešenja</title>
+  <title>Biblioteka Digitalnih Rešenja | Marijana AI Digital Soul</title>
 
   <!-- Google Fonts: Plus Jakarta Sans -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,8 +12,7 @@
 
   <style>
     :root {
-      --primary: #4f46e5;       /* Glavna boja brenda */
-      --primary-dark: #3730a3;
+      --primary: #4f46e5;
       --accent: #8b5cf6;
       --bg: #f8fafc;
       --text: #0f172a;
@@ -35,7 +34,7 @@
       line-height: 1.6;
     }
 
-    /* Gornja traka - Brend i Logo */
+    /* Gornja traka sa navigacijom ka glavnom sajtu */
     nav {
       background: #ffffff;
       border-bottom: 1px solid var(--border);
@@ -57,8 +56,8 @@
     }
 
     .brand-logo {
-      width: 42px;
-      height: 42px;
+      width: 40px;
+      height: 40px;
       border-radius: 10px;
       background: linear-gradient(135deg, var(--primary), var(--accent));
       display: flex;
@@ -66,69 +65,94 @@
       justify-content: center;
       color: white;
       font-weight: 800;
-      font-size: 1.2rem;
+      font-size: 1.1rem;
     }
 
     .brand-name {
-      font-size: 1.25rem;
+      font-size: 1.15rem;
       font-weight: 800;
       letter-spacing: -0.02em;
     }
 
     .brand-tagline {
-      font-size: 0.75rem;
+      font-size: 0.72rem;
       color: var(--text-muted);
       text-transform: uppercase;
       font-weight: 600;
       letter-spacing: 0.05em;
     }
 
-    /* Glavno zaglavlje */
+    .main-site-btn {
+      text-decoration: none;
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--primary);
+      border: 1px solid var(--primary);
+      padding: 8px 16px;
+      border-radius: 8px;
+      transition: all 0.2s;
+    }
+
+    .main-site-btn:hover {
+      background: var(--primary);
+      color: white;
+    }
+
+    /* Hero Zaglavlje */
     header {
       background: linear-gradient(135deg, #1e1b4b 0%, #312e81 50%, #4338ca 100%);
       color: white;
       text-align: center;
-      padding: 80px 20px;
+      padding: 70px 20px;
+    }
+
+    .hub-badge {
+      display: inline-block;
+      background: rgba(255, 255, 255, 0.12);
+      border: 1px solid rgba(255, 255, 255, 0.25);
+      padding: 6px 14px;
+      border-radius: 20px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      margin-bottom: 16px;
     }
 
     header h1 {
-      font-size: 2.8rem;
+      font-size: 2.6rem;
       font-weight: 800;
       letter-spacing: -0.03em;
-      margin-bottom: 14px;
+      margin-bottom: 12px;
     }
 
     header p {
-      font-size: 1.2rem;
+      font-size: 1.15rem;
       opacity: 0.9;
-      max-width: 640px;
+      max-width: 650px;
       margin: 0 auto;
-      font-weight: 400;
     }
 
     .container {
       max-width: 1120px;
-      margin: 60px auto;
+      margin: 50px auto;
       padding: 0 20px;
     }
 
     .section-header {
-      margin-bottom: 28px;
+      margin-bottom: 24px;
     }
 
     .section-title {
-      font-size: 1.8rem;
+      font-size: 1.7rem;
       font-weight: 800;
       letter-spacing: -0.02em;
       color: var(--text);
-      display: flex;
-      align-items: center;
-      gap: 10px;
     }
 
     .section-subtitle {
       color: var(--text-muted);
-      font-size: 0.95rem;
+      font-size: 0.92rem;
       margin-top: 4px;
     }
 
@@ -136,14 +160,14 @@
     .grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 28px;
-      margin-bottom: 60px;
+      gap: 24px;
+      margin-bottom: 50px;
     }
 
     .card {
       background: var(--card-bg);
-      border-radius: 16px;
-      padding: 30px;
+      border-radius: 14px;
+      padding: 26px;
       border: 1px solid var(--border);
       box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.04);
       display: flex;
@@ -153,28 +177,30 @@
     }
 
     .card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 16px 24px -6px rgba(0, 0, 0, 0.08);
+      transform: translateY(-4px);
+      box-shadow: 0 14px 20px -5px rgba(0, 0, 0, 0.07);
     }
 
     .tag {
       align-self: flex-start;
-      font-size: 0.75rem;
+      font-size: 0.72rem;
       font-weight: 700;
       text-transform: uppercase;
       letter-spacing: 0.05em;
-      padding: 6px 12px;
+      padding: 5px 12px;
       border-radius: 9999px;
-      margin-bottom: 16px;
+      margin-bottom: 14px;
     }
 
     .tag-blue { background: #eff6ff; color: #2563eb; }
     .tag-purple { background: #faf5ff; color: #7c3aed; }
     .tag-green { background: #f0fdf4; color: #16a34a; }
     .tag-amber { background: #fffbeb; color: #d97706; }
+    .tag-pink { background: #fdf2f8; color: #db2777; }
+    .tag-orange { background: #fff7ed; color: #ea580c; }
 
     .card h3 {
-      font-size: 1.35rem;
+      font-size: 1.3rem;
       font-weight: 700;
       margin-bottom: 10px;
       color: var(--text);
@@ -182,9 +208,9 @@
 
     .card p {
       color: var(--text-muted);
-      font-size: 0.95rem;
-      margin-bottom: 24px;
-      line-height: 1.6;
+      font-size: 0.92rem;
+      margin-bottom: 22px;
+      line-height: 1.55;
     }
 
     .btn {
@@ -193,9 +219,9 @@
       background-color: #f1f5f9;
       color: var(--text);
       font-weight: 600;
-      font-size: 0.9rem;
-      padding: 12px 20px;
-      border-radius: 10px;
+      font-size: 0.88rem;
+      padding: 10px 18px;
+      border-radius: 8px;
       text-align: center;
       transition: all 0.2s;
     }
@@ -207,16 +233,16 @@
 
     footer {
       text-align: center;
-      padding: 50px 20px;
+      padding: 40px 20px;
       color: var(--text-muted);
-      font-size: 0.9rem;
+      font-size: 0.88rem;
       border-top: 1px solid var(--border);
     }
   </style>
 </head>
 <body>
 
-  <!-- Navigacija / Brend Bar -->
+  <!-- Navigacija -->
   <nav>
     <a href="#" class="brand">
       <div class="brand-logo">M</div>
@@ -225,72 +251,109 @@
         <div class="brand-tagline">Biblioteka Digitalnih Rešenja</div>
       </div>
     </a>
+    <a href="https://marijanaforai-creator.github.io/mindstru-site/" class="main-site-btn">Glavni sajt &rarr;</a>
   </nav>
 
   <!-- Hero Zaglavlje -->
   <header>
+    <span class="hub-badge">Digitalni Resursi i Šabloni</span>
     <h1>Biblioteka Digitalnih Rešenja</h1>
-    <p>&copy; 2026 Marijana AI Digital Soul • Biblioteka Digitalnih Rešenja. Sva prava zadržana.</p>
+    <p>Centralno mesto za preuzimanje digitalnih alata edukacije šablona i kreativnih materijala</p>
   </header>
 
   <div class="container">
 
-    <!-- SEKCIJA: ŠABLONI I TEMPLATE-I -->
+    <!-- SEKCIJA 1: DIGITALNI PROIZVODI I SISTEMI -->
     <div class="section-header">
-      <h2 class="section-title">Digitalni Šabloni & Sistemi</h2>
-      <p class="section-subtitle">Spremni šabloni koje možete odmah upotrebiti za automatizaciju i prodaju.</p>
+      <h2 class="section-title">Digitalni Šabloni i Sistemi</h2>
+      <p class="section-subtitle">Strukture i modeli koje možete preuzeti i primeniti odmah</p>
     </div>
 
     <div class="grid">
       <div class="card">
         <div>
-          <span class="tag tag-blue">Marketing Šablon</span>
-          <h3>Digitalni Alati & Sistemi</h3>
-          <p>Automatizacije i šabloni za lakše vođenje kampanja i postavljanje radnih tokova.</p>
+          <span class="tag tag-blue">Marketing</span>
+          <h3>Digitalni Alati i Automatizacija</h3>
+          <p>Gotovi radni tokovi alati i šabloni za digitalni marketing i sajtove</p>
         </div>
-        <a href="#" class="btn">Preuzmi šablon</a>
+        <a href="#" class="btn">Pogledaj alat</a>
       </div>
 
       <div class="card">
         <div>
           <span class="tag tag-amber">Personalni Razvoj</span>
-          <h3>Vodiči & Produktivnost</h3>
-          <p>Praktični modeli i planeri za organizaciju ciljeva i usvajanje profitabilnih veština.</p>
+          <h3>Vodiči i Produktivnost</h3>
+          <p>Praktični modeli i planeri za svakodnevni fokus i rast digitalnih veština</p>
         </div>
-        <a href="#" class="btn">Pogledaj materijale</a>
+        <a href="#" class="btn">Pogledaj vodič</a>
       </div>
 
       <div class="card">
         <div>
-          <span class="tag tag-blue">Copywriting & Prodaja</span>
-          <h3>Prodajne Strukture & Postovi</h3>
-          <p>Gotovi tekstualni šabloni i formulari za privlačenje klijenata i konverziju ponuda.</p>
+          <span class="tag tag-blue">Prodaja</span>
+          <h3>Prodajni Šabloni i Copywriting</h3>
+          <p>Formule za ponude postove i poruke kreirane za veću konverziju</p>
         </div>
         <a href="#" class="btn">Preuzmi šablone</a>
       </div>
     </div>
 
-    <!-- SEKCIJA: BLOG I BESPLATNI SADRŽAJI -->
+    <!-- SEKCIJA 2: DEČIJE ZANIMACIJE -->
     <div class="section-header">
-      <h2 class="section-title">Blog & Znanje</h2>
-      <p class="section-subtitle">Besplatni uvidi, edukativni tekstovi i resursi za preuzimanje.</p>
+      <h2 class="section-title">Dečije Zanimacije</h2>
+      <p class="section-subtitle">Kreativni digitalni materijali za štampu učenje i igru najmlađih</p>
     </div>
 
     <div class="grid">
       <div class="card">
         <div>
-          <span class="tag tag-purple">Ezoterija & Duhovnost</span>
-          <h3>Za ljubitelje Ezoterije</h3>
-          <p>Uvidi u duhovni rast, intuitivni razvoj, simbole i primenu unutrašnje mudrosti.</p>
+          <span class="tag tag-pink">Bojanke i Kreativa</span>
+          <h3>Tematske Bojanke za Štampu</h3>
+          <p>Kolekcija ilustracija i bojanki u PDF formatu spremnih za trenutno štampanje i bojenje</p>
         </div>
-        <a href="#" class="btn">Čitaj blog</a>
+        <a href="#" class="btn">Preuzmi bojanke</a>
       </div>
 
       <div class="card">
         <div>
-          <span class="tag tag-green">Besplatni Resursi</span>
+          <span class="tag tag-orange">Edukacija i Igre</span>
+          <h3>Radni Listovi i Lavirinti</h3>
+          <p>Zabavni zadaci logičke igre spajalice i radni listovi za razvoj dečije motorike i pažnje</p>
+        </div>
+        <a href="#" class="btn">Preuzmi radne listove</a>
+      </div>
+
+      <div class="card">
+        <div>
+          <span class="tag tag-green">Dečiji Paketi</span>
+          <h3>Kompleti Aktivnosti za Decu</h3>
+          <p>Celokupni paketi igara i zanimacija za vikend putovanja ili rođendanske zabave</p>
+        </div>
+        <a href="#" class="btn">Pogledaj pakete</a>
+      </div>
+    </div>
+
+    <!-- SEKCIJA 3: BLOG I RESURSI -->
+    <div class="section-header">
+      <h2 class="section-title">Blog i Znanje</h2>
+      <p class="section-subtitle">Ezoterija intuitivni razvoj i besplatni materijali</p>
+    </div>
+
+    <div class="grid">
+      <div class="card">
+        <div>
+          <span class="tag tag-purple">Uvidi i Duhovnost</span>
+          <h3>Za ljubitelje Ezoterije</h3>
+          <p>Duhovni uvidi simbolika i tekstovi posvećeni intuitivnom i ličnom buđenju</p>
+        </div>
+        <a href="#" class="btn">Čitaj blog postove</a>
+      </div>
+
+      <div class="card">
+        <div>
+          <span class="tag tag-green">Preuzimanja</span>
           <h3>Mesto za preuzimanje Besplatnih sadržaja</h3>
-          <p>Besplatni PDF šabloni, ček-liste i materijali spremni za preuzimanje jednim klikom.</p>
+          <p>Besplatni PDF vodiči tabele i materijali spremni za preuzimanje jednim klikom</p>
         </div>
         <a href="#" class="btn">Preuzmi besplatno</a>
       </div>
@@ -299,7 +362,7 @@
   </div>
 
   <footer>
-    &copy; 2026 Marijana AI Digital Soul • Biblioteka Digitalnih Rešenja. Sva prava zadržana.
+    &copy; 2026 Marijana AI Digital Soul | Biblioteka Digitalnih Rešenja - Sva prava zadržana
   </footer>
 
 </body>
