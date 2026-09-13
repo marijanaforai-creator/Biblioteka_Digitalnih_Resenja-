@@ -38,10 +38,19 @@
       margin: 50px auto;
       padding: 0 20px;
     }
+    .section-title {
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: #0f172a;
+      margin-bottom: 24px;
+      border-left: 5px solid #2563eb;
+      padding-left: 12px;
+    }
     .grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
       gap: 28px;
+      margin-bottom: 60px;
     }
     .card {
       background: white;
@@ -69,6 +78,14 @@
       background-color: #eff6ff;
       color: #2563eb;
       margin-bottom: 14px;
+    }
+    .tag.purple {
+      background-color: #faf5ff;
+      color: #7c3aed;
+    }
+    .tag.green {
+      background-color: #f0fdf4;
+      color: #16a34a;
     }
     .card h3 {
       font-size: 1.35rem;
@@ -113,6 +130,9 @@
   </header>
 
   <div class="container">
+
+    <!-- Glavni resursi -->
+    <h2 class="section-title">Digitalni Proizvodi i Sistemi</h2>
     <div class="grid">
       <div class="card">
         <div>
@@ -141,6 +161,29 @@
         <a href="#" class="btn">Istraži resurse</a>
       </div>
     </div>
+
+    <!-- Blog sekcija sa podsekcijama -->
+    <h2 class="section-title">Blog & Resursi</h2>
+    <div class="grid">
+      <div class="card">
+        <div>
+          <span class="tag purple">Duhovnost & Uvidi</span>
+          <h3>Za ljubitelje Ezoterije</h3>
+          <p>Tekstovi, razmišljanja i teme posvećene ezoteriji, intuitivnom razvoju i ličnoj transformaciji.</p>
+        </div>
+        <a href="#" class="btn">Čitaj blog</a>
+      </div>
+
+      <div class="card">
+        <div>
+          <span class="tag green">Freebies & Preuzimanja</span>
+          <h3>Mesto za preuzimanje Besplatnih sadržaja</h3>
+          <p>Besplatni PDF vodiči, šabloni, ček-liste i materijali koje možete odmah preuzeti i primeniti.</p>
+        </div>
+        <a href="#" class="btn">Preuzmi materijale</a>
+      </div>
+    </div>
+
   </div>
 
   <footer>
